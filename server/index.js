@@ -15,7 +15,7 @@ app.get("/", function (request, response) {
 
 // const MONGO_URL = 'mongodb://127.0.0.1';
 const MONGO_URL = process.env.MONGO_URL;
-const PORT = process.env.PORT;
+const PORT = process.env.PORT|| 6000;
 
 const client = new MongoClient(MONGO_URL); //dial a number.
 await client.connect(); //call  //previous handshake is happening
