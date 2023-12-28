@@ -18,7 +18,7 @@ import sendEmail from "../utils/sendEmail.js";
 const router = express.Router();
 
 //!below api is foront end api to use to send mail.
-const API = "https://bulk-emailtool.netlify.app";
+const API = "https://venerable-halva-0293bd.netlify.app";
 
 router.post('/signup',express.json(),async function(request, response){
     const { email, emailVerified, password, userName } = request.body;
